@@ -1,0 +1,176 @@
+body{
+    background: black;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    background:burlywood;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: auto;
+    margin-top: 15px;
+}
+#leye,#reye{
+    background: brown;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+#eyes{
+    display: flex;
+    padding-top: 125px;
+    justify-content: space-around;
+
+}
+
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: lightsteelblue;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+#center{
+    height: 200px;
+    width: 200px;
+    background: lightseagreen;
+    margin: auto;
+    margin-top: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#body{
+    width:300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+
+}
+#lleg,#rleg{
+    height: 100px;
+    width: 25px;
+    background: lightgoldenrodyellow;
+    border-radius: 15px;
+}
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: auto;
+    margin-top: -18px;
+}
+#main{
+    height: 530px;
+    width: 350px;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 15px;
+}
+#main:hover #face{
+    animation: changeface 1s 10;
+}
+@keyframes changeface{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(30deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #larm{
+    animation: changelarm 1s infinite;
+}
+@keyframes changelarm{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #rarm{
+    animation: changerarm 1s infinite;
+}
+@keyframes changerarm{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(-180deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #lleg{
+    animation: changelleg 0.5s infinite;
+}
+@keyframes changelleg{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(30deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #rleg{
+    animation: changerleg 0.5s infinite;
+}
+@keyframes changerleg{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(-30deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #center{
+    animation: changecenter 0.5s infinite;
+}
+@keyframes changecenter{
+    from{
+        transform: rotate(30deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(-30deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #reye{
+    animation: changereye 0.5s infinite;
+}
+@keyframes changereye{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(-180deg);
+        transform-origin: top center; 
+    }
+}
+#main:hover #leye{
+    animation: changeleye 0.5s infinite;
+}
+@keyframes changeleye{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top center;  
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: top center; 
+    }
+}
